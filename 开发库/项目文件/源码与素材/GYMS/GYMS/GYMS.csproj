@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8DB2F98-0E40-481B-92F1-12E1ADBC8C1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GYMS</RootNamespace>
+    <AssemblyName>GYMS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="bunifuDataviz 1.0.1">
+      <HintPath>..\bunifuDataviz 1.0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsControlLibrary1">
+      <HintPath>..\..\WindowsFormsControlLibrary1\bin\Debug\WindowsFormsControlLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="FormChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChat.Designer.cs">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetail.Designer.cs">
+      <DependentUpon>FormDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmail.Designer.cs">
+      <DependentUpon>FormEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFatherPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFatherPro.Designer.cs">
+      <DependentUpon>FormFatherPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGYUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGYUpdate.Designer.cs">
+      <DependentUpon>FormGYUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainProManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainProManage.Designer.cs">
+      <DependentUpon>FormMainProManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainPro.Designer.cs">
+      <DependentUpon>FormMainPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSignup.Designer.cs">
+      <DependentUpon>FormSignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_controls\User3D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\User3D.Designer.cs">
+      <DependentUpon>User3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_controls\UserComunication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\UserComunication.Designer.cs">
+      <DependentUpon>UserComunication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_controls\UserGY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\UserGY.Designer.cs">
+      <DependentUpon>UserGY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_controls\UserHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_controls\UseriDetial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\UseriDetial.Designer.cs">
+      <DependentUpon>UseriDetial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_controls\UserInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\UserInformation.Designer.cs">
+      <DependentUpon>UserInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_controls\UserPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\UserPerson.Designer.cs">
+      <DependentUpon>UserPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_controls\UserWall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_controls\UserWall.Designer.cs">
+      <DependentUpon>UserWall.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormChat.resx">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetail.resx">
+      <DependentUpon>FormDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmail.resx">
+      <DependentUpon>FormEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFatherPro.resx">
+      <DependentUpon>FormFatherPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGYUpdate.resx">
+      <DependentUpon>FormGYUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainProManage.resx">
+      <DependentUpon>FormMainProManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainPro.resx">
+      <DependentUpon>FormMainPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignup.resx">
+      <DependentUpon>FormSignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User_controls\User3D.resx">
+      <DependentUpon>User3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_controls\UserComunication.resx">
+      <DependentUpon>UserComunication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_controls\UserGY.resx">
+      <DependentUpon>UserGY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_controls\UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_controls\UseriDetial.resx">
+      <DependentUpon>UseriDetial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_controls\UserInformation.resx">
+      <DependentUpon>UserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_controls\UserPerson.resx">
+      <DependentUpon>UserPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_controls\UserWall.resx">
+      <DependentUpon>UserWall.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{f3576290-8132-46a6-a62f-827e17f7c865}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{06a7a59b-3454-4744-86c8-bb42c03dc444}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下载.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下载1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
